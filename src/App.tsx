@@ -22,7 +22,41 @@ function App() {
   return (
     <div className="App">
       <header className='App-header'>
-        <LikeButton />
+        <div className='inner'>
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+        </div>
+        <div className='inner'>
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+        </div>
+        <div className='inner'>
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+        </div>
+        <div className='inner'>
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+        </div>
+        <div className='inner'>
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+        </div>
       </header>
     </div>
   );
@@ -30,11 +64,11 @@ function App() {
 
 function LikeButton() {
   const [count, setCount] = useState(false);
-  const [str, setStr] = useState('黒');
+  const [str, setStr] = useState('白');
   const handleClick = () => {
     setCount(!count);
-    if (count == true) setStr('白');
-    else setStr('黒');
+    if (count == true) setStr('黒');
+    else setStr('白');
   };
   return (<span className='likeButton' onClick={handleClick}>{str}</span>)
 }
